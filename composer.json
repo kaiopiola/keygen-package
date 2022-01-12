@@ -16,5 +16,6 @@
         "psr-4": {
             "Kaip\\Keygen\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
