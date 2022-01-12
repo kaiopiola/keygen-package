@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Kaip\\Keygen\\": "src/"
+            "Kaiop\\Keygen\\": "src/"
         }
     },
     "minimum-stability": "dev"
