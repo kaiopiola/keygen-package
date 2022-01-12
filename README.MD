@@ -32,3 +32,11 @@ $chave->letters("ABC"); // Define as letras que poderão compor sua chave, se n�
 
 $chave->generate(); // Gera sua chave e retorna um valor do tipo string com o resultado
 ```
+
+## Considerações
+
+Este projeto é aberto à contribuições, sejam com sugestões e ou melhorias no código de qualquer tipo.
+Sinta-se à vontade para participar do seu desenvolvimento.
+
+## License
+Licença MIT (MIT). Por favor, leia o [Arquivo de Licença](LICENSE) para maiores informações.
