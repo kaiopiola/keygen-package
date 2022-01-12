@@ -64,7 +64,7 @@ class Key extends Settings
      */
     protected $generated_key;
 
-    public function new()
+    public function generate()
     {
         // NNNNN-NNNNN-NNNNN - Pattern padrão
         // $this->pattern; //Trabalhar o pattern com essa variavel
