@@ -2,6 +2,7 @@
     "name": "kaiopiola/keygen",
     "description": "Pattern-based key generator",
     "type": "package",
+    "license": "MIT",
     "authors": [
         {
             "name": "Kaio Piola",
