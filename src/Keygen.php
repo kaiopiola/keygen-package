@@ -16,7 +16,7 @@ class Key
      */
     protected $generated_key;
 
-    public function new()
+    public static function new()
     {
         // NNNNN-NNNNN-NNNNN
         $characters = '0123456789ABCDEFGHJKLMNPQRSTVWXYZ';
