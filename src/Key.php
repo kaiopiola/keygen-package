@@ -5,7 +5,7 @@
  * Date: 01/12/2022 
  */
 
-namespace Kaiop\Keygen;
+namespace Kaiopiola\Keygen;
 
 abstract class Settings
 {
