@@ -1,4 +1,6 @@
 # Keygen
+<a target="_blank" href="https://packagist.org/packages/kaiopiola/keygen" ><img src="https://img.shields.io/packagist/dt/kaiopiola/keygen?color=%2300FFF" /></a>
+
 ***Este plugin está em desenvolvimento e pode apresentar comportamento inesperado durante o seu uso, por favor, reporte qualquer tipo de bug ou erro que encontrar ao utilizar essa solução, para que possamos torná-la a melhor possível para o seu uso!***
 
 O plugin Keygen é um gerador de chaves ou seriais baseado em padrões de máscara definidos pelo usuário.
