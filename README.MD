@@ -11,8 +11,6 @@ O plugin é capaz de gerar chaves como o exemplo abaixo:
 
 ```6W2F-4RJB-KV0Z-ADA6-4SJ2```
 
-O mesmo foi escrito com PHP 8.0.12, porém, deve ser compatível com versões PHP 7.4.x ou superiores.
-
 ## Como o Keygen funciona
 
 ### Como criar uma nova chave
