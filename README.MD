@@ -85,4 +85,4 @@ This project is open to contributions, whether with suggestions or improvements 
 Feel free to participate in its development.
 
 ## License
-Licença MIT (MIT). Please, read the [License File](LICENSE) for more informations.
+MIT License (MIT). Please, read the [License File](LICENSE) for more informations.
