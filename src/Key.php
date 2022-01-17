@@ -23,8 +23,7 @@ class Key extends Settings
     public function generate()
     {
         mb_internal_encoding('UTF-8');
-        // NNNNN-NNNNN-NNNNN - Pattern padrão
-        // $this->pattern; //Trabalhar o pattern com essa variavel
+
         $numbers = $this->numbers;
         $letters = $this->letters;
         $characters = $numbers . $letters;
@@ -43,7 +42,6 @@ class Key extends Settings
                     $generated_key .= $characters[rand(0, mb_strlen($characters) - 1)];
                     break;
                 default:
-                    // $randstring .= $characters[rand(0, strlen($characters) - 1)];
                     $generated_key .= $pattern[$x];
                     break;
             }
