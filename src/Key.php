@@ -1,7 +1,7 @@
 <?php
 
 /**
- * User: Kaio Piola
+ * User: kaiopiola
  * Date: 01/12/2022 
  */
 
@@ -10,48 +10,33 @@ namespace Kaiopiola\Keygen;
 abstract class Settings
 {
     /**
-     * Define o padrão de chave utilizado
-     * Exemplo: LLLL-NNNN-XXXX
-     * 
-     * L representa as Letras
-     * N representa os Números
-     * X representa qualquer um dos dois tipos
-     * 
-     * Qualquer outro caractere (Como traços, pontos, etc) não
-     * sofrerá alteração no momento da geração, mantendo seu valor original.
-     * 
-     * Se não definido, será utilizado o seguinte: XXXXX-XXXXX-XXXXX
-     * 
-     * @return string
-     */
-    public function pattern($s)
+     * Set pattern format
+     * @param string $pattern String of allowed format i.e. XXXX-NNNN-LLLL
+     * @return void
+     **/
+    public function pattern($pattern)
     {
-        return $this->pattern = $s;
+        return $this->pattern = $pattern;
     }
 
     /**
-     * Define quais números poderão ser utilizados no momento da geração.
-     * 
-     * Se não definido, será utilizado o seguinte: 0123456789
-     * 
-     * @return string
-     */
-    public function numbers($s)
+     * Set allowed numbers
+     * @param string $numbers String of allowed numbers i.e. 123456
+     * @return void
+     **/
+    public function numbers($numbers)
     {
-        return $this->numbers = $s;
+        $this->numbers = $numbers;
     }
 
     /**
-     * Define quais letras poderão ser utilizadas no momento da geração, mantendo
-     * sua capitalização.
-     * 
-     * Se não definido, será utilizado o seguinte: ABCDEFGHIJKLMNOPQRSTUVWXYZ
-     * 
-     * @return string
-     */
-    public function letters($s)
+     * Set allowed letters
+     * @param string $letters String of allowed letters i.e. ABCDE
+     * @return void
+     **/
+    public function letters($letters)
     {
-        return $this->letters = $s;
+        $this->letters = $letters;
     }
 }
 
@@ -59,8 +44,7 @@ class Key extends Settings
 {
     /**
      * Output key
-     *
-     * @var
+     * @return string $generated_key
      */
     protected $generated_key;
     protected $numbers = '0123456789';
@@ -75,7 +59,7 @@ class Key extends Settings
         $letters = $this->letters;
         $characters = $numbers . $letters;
 
-        $pattern = $this->pattern; //Valida existencia da property pattern
+        $pattern = $this->pattern;
         $divide_pattern = explode('-', $pattern);
 
         $generated_key = "";
@@ -93,15 +77,13 @@ class Key extends Settings
                         $randstring .= $characters[rand(0, strlen($characters) - 1)];
                         break;
                     default:
-                    // $randstring .= $characters[rand(0, strlen($characters) - 1)];
-                    $randstring .= $divide_pattern[$i][$x];
-                    break;
+                        // $randstring .= $characters[rand(0, strlen($characters) - 1)];
+                        $randstring .= $divide_pattern[$i][$x];
+                        break;
                 }
             }
             $i == count($divide_pattern) - 1 ? $generated_key .= $randstring : $generated_key .= $randstring . "-";
         }
-
-
         return $generated_key;
     }
 }
