@@ -15,7 +15,6 @@ class Key extends Settings
      * Output key
      * @return string $generated_key
      */
-    protected $generated_key;
     protected $numbers = '0123456789';
     protected $letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     protected $pattern = 'XXXXX-XXXXX-XXXXX';
