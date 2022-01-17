@@ -11,6 +11,16 @@ O plugin é capaz de gerar chaves como o exemplo abaixo:
 
 ```6W2F-4RJB-KV0Z-ADA6-4SJ2```
 
+Pode ser utilizado para gerar chaves em diversas finalidades, são alguns exemplos:
+<ul>
+  <li>Links únicos para redefinição de senhas</li>
+  <li>Cadastros via link de convite</li>
+  <li>Códigos de autenticação de dois fatores</li>
+  <li>Links de compartilhamento de arquivos</li>
+  <li>Chaves de resgate de produtos</li>
+  <li>Cupons de desconto</li>
+</ul>
+
 ## Como o Keygen funciona
 
 ### Como criar uma nova chave
@@ -53,6 +63,17 @@ The Keygen plugin is a key or serial generator based on user-defined mask patter
 The plugin is able to generate keys like the example below:
 
 ```6W2F-4RJB-KV0Z-ADA6-4SJ2```
+
+It can be used to generate keys for several purposes, some examples are:
+
+<ul>
+   <li>Unique links to reset passwords</li>
+   <li>Registration via invitation link</li>
+   <li>Two-Factor Authentication Codes</li>
+   <li>File sharing links</li>
+   <li>Product Redemption Keys</li>
+   <li>Discount coupons</li>
+</ul>
 
 ## How Keygen works
 
