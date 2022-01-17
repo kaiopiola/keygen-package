@@ -63,16 +63,19 @@ class Key extends Settings
      * @var
      */
     protected $generated_key;
+    protected $numbers = '0123456789';
+    protected $letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    protected $pattern = 'XXXXX-XXXXX-XXXXX';
 
     public function generate()
     {
         // NNNNN-NNNNN-NNNNN - Pattern padrão
         // $this->pattern; //Trabalhar o pattern com essa variavel
-        property_exists($this, 'numbers') ? $numbers = $this->numbers : $numbers = "0123456789";
-        property_exists($this, 'letters') ? $letters = $this->letters : $letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        $numbers = $this->numbers;
+        $letters = $this->letters;
         $characters = $numbers . $letters;
 
-        property_exists($this, 'pattern') ? $pattern = $this->pattern : $pattern = "XXXXX-XXXXX-XXXXX"; //Valida existencia da property pattern
+        $pattern = $this->pattern; //Valida existencia da property pattern
         $divide_pattern = explode('-', $pattern);
 
         $generated_key = "";
