@@ -21,6 +21,20 @@ Pode ser utilizado para gerar chaves em diversas finalidades, são alguns exempl
   <li>Cupons de desconto</li>
 </ul>
 
+## Instalação
+
+Primeiro, execute o seguinte comando em seu projeto:
+
+``` console
+composer require kaiopiola/keygen
+```
+
+Então, chame a classe principal no arquivo PHP onde deseja utiliza-la:
+
+``` php
+use Kaiopiola\Keygen\Key;
+```
+
 ## Como o Keygen funciona
 
 ### Como criar uma nova chave
@@ -74,6 +88,20 @@ It can be used to generate keys for several purposes, some examples are:
    <li>Product Redemption Keys</li>
    <li>Discount coupons</li>
 </ul>
+
+## Installation
+
+Fisrt, run the following command in your project:
+
+``` console
+composer require kaiopiola/keygen
+```
+
+Then, call the main class on the PHP file you want to load it:
+
+``` php
+use Kaiopiola\Keygen\Key;
+```
 
 ## How Keygen works
 
