@@ -16,7 +16,7 @@ abstract class Settings
      **/
     public function pattern($pattern)
     {
-        return $this->pattern = $pattern;
+        $this->pattern = $pattern;
     }
 
     /**
