@@ -14,7 +14,7 @@ abstract class Settings
      * @param string $pattern String of allowed format i.e. XXXX-NNNN-LLLL
      * @return void
      **/
-    public function pattern($pattern)
+    public function setPattern($pattern)
     {
         $this->pattern = $pattern;
     }
@@ -24,7 +24,7 @@ abstract class Settings
      * @param string $numbers String of allowed numbers i.e. 123456
      * @return void
      **/
-    public function numbers($numbers)
+    public function setNumbers($numbers)
     {
         $this->numbers = $numbers;
     }
@@ -34,7 +34,7 @@ abstract class Settings
      * @param string $letters String of allowed letters i.e. ABCDE
      * @return void
      **/
-    public function letters($letters)
+    public function setLetters($letters)
     {
         $this->letters = $letters;
     }
