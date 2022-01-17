@@ -53,6 +53,7 @@ class Key extends Settings
 
     public function generate()
     {
+        mb_internal_encoding('UTF-8');
         // NNNNN-NNNNN-NNNNN - Pattern padrão
         // $this->pattern; //Trabalhar o pattern com essa variavel
         $numbers = $this->numbers;
@@ -65,16 +66,16 @@ class Key extends Settings
         $generated_key = "";
         for ($i = 0; $i < count($divide_pattern); $i++) {
             $randstring = "";
-            for ($x = 0; $x < strlen($divide_pattern[$i]); $x++) {
+            for ($x = 0; $x < mb_strlen($divide_pattern[$i]); $x++) {
                 switch ($divide_pattern[$i][$x]) {
                     case "N":
-                        $randstring .= $numbers[rand(0, strlen($numbers) - 1)];
+                        $randstring .= $numbers[rand(0, mb_strlen($numbers) - 1)];
                         break;
                     case "L":
-                        $randstring .= $letters[rand(0, strlen($letters) - 1)];
+                        $randstring .= $letters[rand(0, mb_strlen($letters) - 1)];
                         break;
                     case "X":
-                        $randstring .= $characters[rand(0, strlen($characters) - 1)];
+                        $randstring .= $characters[rand(0, mb_strlen($characters) - 1)];
                         break;
                     default:
                         // $randstring .= $characters[rand(0, strlen($characters) - 1)];
