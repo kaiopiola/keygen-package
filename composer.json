@@ -12,10 +12,21 @@
     "require": {
         "php": "^7.4|^8.0"
     },
+    "require-dev": {
+      "phpunit/phpunit": "^9.5"
+    },
     "autoload": {
         "psr-4": {
             "Kaiopiola\\Keygen\\": "src/"
         }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "Tests\\": "tests/"
+      }
+    },
+    "scripts": {
+        "test": "./vendor/bin/phpunit"
     },
     "minimum-stability": "dev"
 }
