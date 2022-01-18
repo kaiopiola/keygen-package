@@ -48,7 +48,7 @@ To create a new key, just instantiate the class in a variable, and then define i
 $exampleKey = new Key;
 
 # Setting parameters:
-$exampleKey->pattern("XXXX-NNNN-LLLL"); // Defines the pattern that the code will use to define its new key. 
+$exampleKey->setPattern("XXXX-NNNN-LLLL"); // Defines the pattern that the code will use to define its new key. 
 // The letters represent the type of content that can be used in that space, as per the rule:
 // X - Any letter or number
 // N - Numbers only as defined
@@ -56,8 +56,8 @@ $exampleKey->pattern("XXXX-NNNN-LLLL"); // Defines the pattern that the code wil
 // Any other characters like dashes, dots, slashes, and even other letters and numbers, will not be replaced.
 // If this property is not defined, the following will be used by default: XXXXX-XXXXX-XXXXX
 
-$exampleKey->numbers("789"); // Defines the numbers that can compose your key, if not defined, it will use by default "0123456789"
-$exampleKey->letters("ABC"); // Defines the letters that can compose your key, if not defined, it will use by default "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+$exampleKey->setNumbers("789"); // Defines the numbers that can compose your key, if not defined, it will use by default "0123456789"
+$exampleKey->setLetters("ABC"); // Defines the letters that can compose your key, if not defined, it will use by default "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 $exampleKey->generate(); // Generate your key and return a string value with the result
 ```
@@ -115,7 +115,7 @@ Para criar uma nova chave, basta instanciar a classe em uma variável, e em segu
 $chave = new Key;
 
 # Definindo parâmetros:
-$chave->pattern("XXXX-NNNN-LLLL"); // Define o padrão que o código utilizará para definir sua nova chave. 
+$chave->setPattern("XXXX-NNNN-LLLL"); // Define o padrão que o código utilizará para definir sua nova chave. 
 // As letras representam o tipo de conteúdo que pode ser usado naquele espaço, conforme a regra:
 // X - Qualquer letra ou número
 // N - Apenas números, conforme definido
@@ -123,8 +123,8 @@ $chave->pattern("XXXX-NNNN-LLLL"); // Define o padrão que o código utilizará 
 // Quaisquer outros caracteres como traços, pontos, barras, e até mesmo outras letras e números, não serão substituídos.
 // Caso essa propriedade não esteja definida, será utilizada por padrão a seguinte: XXXXX-XXXXX-XXXXX
 
-$chave->numbers("789"); // Define os números que poderão compor sua chave, se não definido, irá utilizar por padrão "0123456789"
-$chave->letters("ABC"); // Define as letras que poderão compor sua chave, se não definido, irá utilizar por padrão "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+$chave->setNumbers("789"); // Define os números que poderão compor sua chave, se não definido, irá utilizar por padrão "0123456789"
+$chave->setLetters("ABC"); // Define as letras que poderão compor sua chave, se não definido, irá utilizar por padrão "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 $chave->generate(); // Gera sua chave e retorna um valor do tipo string com o resultado
 ```
