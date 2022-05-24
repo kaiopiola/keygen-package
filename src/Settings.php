@@ -1,8 +1,14 @@
 <?php
 
 /**
- * User: kaiopiola
- * Date: 17/12/2022 
+ * @author Kaiopiola <github.com/kaiopiola>
+ * @package Kaiopiola\Keygen
+ * 
+ * This file is part of the Kaiopiola\Keygen package.
+ * 
+ * (c) Kaio Piola 2022 <contact@kaiopiola.dev>
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
 
 namespace Kaiopiola\Keygen;
@@ -37,5 +43,15 @@ abstract class Settings
     public function setLetters($letters)
     {
         $this->letters = $letters;
+    }
+
+    /**
+     * Set existing keys to avoid duplicates
+     * @param array $existing_keys Array of existing keys
+     * @return void
+     */
+    public function setExistingKeys($existing_keys)
+    {
+        $this->existing_keys = $existing_keys;
     }
 }
