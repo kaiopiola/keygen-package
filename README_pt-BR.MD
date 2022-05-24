@@ -18,6 +18,7 @@ Pode ser utilizado para gerar chaves em diversas finalidades, são alguns exempl
   <li>Links de compartilhamento de arquivos</li>
   <li>Chaves de resgate de produtos</li>
   <li>Cupons de desconto</li>
+  <li>Códigos de referência</li>
 </ul>
 
 ## Instalação
@@ -58,6 +59,19 @@ $chave->setLetters("ABC"); // Define as letras que poderão compor sua chave, se
 
 $chave->generate(); // Gera sua chave e retorna um valor do tipo string com o resultado
 ```
+
+### Como criar uma nova chave única
+
+⚠️ <i style="color:red;">Esse recurso específico ainda está em desenvolvimento e você pode ter problemas ou instabilidade ao usá-lo! <br>Se você encontrar algum problema ou bug, por favor [crie uma nova issue](https://github.com/kaiopiola/keygen-package/issues/new?labels=bug) com a tag bug!</i> ⚠️
+
+Você também tem a opção de gerar uma chave única para evitar duplicatas, usando o exemplo abaixo:
+
+``` php
+$exampleKey->setExistingKeys([]); // Define as chaves existentes que o código evitará duplicatas. Deve ser tipo array.
+
+$exampleKey->generateUnique(); // Gere sua chave e retorne um valor de string com o resultado
+```
+Essa função também é compatível com ```setPattern```, ```setNumbers``` e ```setLetters```!
 
 ## Considerações
 

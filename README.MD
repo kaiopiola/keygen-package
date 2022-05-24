@@ -18,10 +18,11 @@ It can be used to generate keys for several purposes, some examples are:
 <ul>
    <li>Unique links to reset passwords</li>
    <li>Registration via invitation link</li>
-   <li>Two-Factor Authentication Codes</li>
+   <li>Two-Factor authentication codes</li>
    <li>File sharing links</li>
-   <li>Product Redemption Keys</li>
+   <li>Product redemption keys</li>
    <li>Discount coupons</li>
+   <li>Referral codes</li>
 </ul>
 
 ## Installation
@@ -62,6 +63,19 @@ $exampleKey->setLetters("ABC"); // Defines the letters that can compose your key
 
 $exampleKey->generate(); // Generate your key and return a string value with the result
 ```
+
+### How to create a new unique key
+
+⚠️ <i style="color:red;">This particular feature is still under development and you may experience issues or instability when using it! <br>If you find any problems or bugs, please [create a new issue](https://github.com/kaiopiola/keygen-package/issues/new?labels=bug) tagged bug!</i> ⚠️
+
+You also have the option to generate an unique key to avoid duplicates, using the example below:
+
+``` php
+$exampleKey->setExistingKeys([]); // Defines the existing keys that the code will avoid duplicates. Must be type array.
+
+$exampleKey->generateUnique(); // Generate your key and return a string value with the result
+```
+This is also compatible with ```setPattern```, ```setNumbers``` and ```setLetters``` too!
 
 ## Considerations
 
