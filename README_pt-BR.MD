@@ -3,7 +3,7 @@
 <a target="_blank" href="https://packagist.org/packages/kaiopiola/keygen" ><img src="https://img.shields.io/packagist/v/kaiopiola/keygen?color=%23888888&label=vers%C3%A3o" /></a>
 <a target="_blank" href="https://packagist.org/packages/kaiopiola/keygen" ><img src="https://img.shields.io/packagist/php-v/kaiopiola/keygen" /></a>
 
-***Este plugin está em desenvolvimento e pode apresentar comportamento inesperado durante o seu uso, por favor, reporte qualquer tipo de bug ou erro que encontrar ao utilizar essa solução, para que possamos torná-la a melhor possível para o seu uso!***
+***Se encontrar qualquer bug, por favor [crie uma nova issue](https://github.com/kaiopiola/keygen-package/issues/new?labels=bug)!***
 
 O plugin Keygen é um gerador de chaves ou seriais baseado em padrões de máscara definidos pelo usuário.
 O plugin é capaz de gerar chaves como o exemplo abaixo:
@@ -61,8 +61,6 @@ $chave->generate(); // Gera sua chave e retorna um valor do tipo string com o re
 ```
 
 ### Como criar uma nova chave única
-
-⚠️ <i style="color:red;">Esse recurso específico ainda está em desenvolvimento e você pode ter problemas ou instabilidade ao usá-lo! <br>Se você encontrar algum problema ou bug, por favor [crie uma nova issue](https://github.com/kaiopiola/keygen-package/issues/new?labels=bug) com a tag bug!</i> ⚠️
 
 Você também tem a opção de gerar uma chave única para evitar duplicatas, usando o exemplo abaixo:
 
