@@ -6,7 +6,7 @@
 
 ### Essa documentação está disponível também em [Português do Brasil](README_pt-BR.MD).
 
-***This plugin is under development and may exhibit unexpected behavior while using it, please report any bugs or errors you find when using this solution, so that we can make it the best possible for your use!***
+***If you find any bug, feel free to [create a new issue](https://github.com/kaiopiola/keygen-package/issues/new?labels=bug)!***
 
 The Keygen plugin is a key or serial generator based on user-defined mask patterns.
 The plugin is able to generate keys like the example below:
@@ -65,8 +65,6 @@ $exampleKey->generate(); // Generate your key and return a string value with the
 ```
 
 ### How to create a new unique key
-
-⚠️ <i style="color:red;">This particular feature is still under development and you may experience issues or instability when using it! <br>If you find any problems or bugs, please [create a new issue](https://github.com/kaiopiola/keygen-package/issues/new?labels=bug) tagged bug!</i> ⚠️
 
 You also have the option to generate an unique key to avoid duplicates, using the example below:
 
